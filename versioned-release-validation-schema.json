@@ -1,0 +1,364 @@
+{
+    "properties": {
+        "initiationType": {
+            "items": {
+                "properties": {
+                    "releaseDate": {}
+                }
+            }
+        }
+    },
+    "definitions": {
+        "Contract": {
+            "properties": {
+                "awardID": {
+                    "items": {
+                        "properties": {
+                            "releaseDate": {}
+                        }
+                    }
+                },
+                "status": {
+                    "items": {
+                        "properties": {
+                            "releaseDate": {}
+                        }
+                    }
+                }
+            }
+        },
+        "Budget": {
+            "properties": {
+                "projectID": {
+                    "items": {
+                        "properties": {
+                            "releaseDate": {}
+                        }
+                    }
+                },
+                "id": {
+                    "items": {
+                        "properties": {
+                            "releaseDate": {}
+                        }
+                    }
+                }
+            }
+        },
+        "Amendment": {
+            "properties": {
+                "changes": {
+                    "items": {
+                        "properties": {
+                            "releaseDate": {}
+                        }
+                    }
+                }
+            }
+        },
+        "StringNullUriVersioned": {
+            "items": {
+                "properties": {
+                    "value": {},
+                    "releaseDate": {}
+                }
+            }
+        },
+        "StringNullDateTimeVersioned": {
+            "items": {
+                "properties": {
+                    "value": {},
+                    "releaseDate": {}
+                }
+            }
+        },
+        "Classification": {
+            "properties": {
+                "id": {
+                    "items": {
+                        "properties": {
+                            "releaseDate": {}
+                        }
+                    }
+                }
+            }
+        },
+        "Organization": {
+            "properties": {
+                "additionalIdentifiers": {
+                    "items": {
+                        "properties": {
+                            "value": {},
+                            "releaseDate": {}
+                        }
+                    }
+                }
+            }
+        },
+        "Value": {
+            "properties": {
+                "amount": {
+                    "items": {
+                        "properties": {
+                            "releaseDate": {}
+                        }
+                    }
+                }
+            }
+        },
+        "StringNullVersioned": {
+            "items": {
+                "properties": {
+                    "releaseDate": {}
+                }
+            }
+        },
+        "Tender": {
+            "properties": {
+                "status": {
+                    "items": {
+                        "properties": {
+                            "releaseDate": {}
+                        }
+                    }
+                },
+                "procurementMethod": {
+                    "items": {
+                        "properties": {
+                            "releaseDate": {}
+                        }
+                    }
+                },
+                "tenderers": {
+                    "items": {
+                        "properties": {
+                            "value": {},
+                            "releaseDate": {}
+                        }
+                    }
+                },
+                "hasEnquiries": {
+                    "items": {
+                        "properties": {
+                            "releaseDate": {}
+                        }
+                    }
+                },
+                "id": {
+                    "items": {
+                        "properties": {
+                            "releaseDate": {}
+                        }
+                    }
+                },
+                "submissionMethod": {
+                    "items": {
+                        "properties": {
+                            "releaseDate": {}
+                        }
+                    }
+                },
+                "numberOfTenderers": {
+                    "items": {
+                        "properties": {
+                            "releaseDate": {}
+                        }
+                    }
+                }
+            }
+        },
+        "Item": {
+            "properties": {
+                "quantity": {
+                    "items": {
+                        "properties": {
+                            "releaseDate": {}
+                        }
+                    }
+                },
+                "deliveryLocation": {
+                    "type": "object",
+                    "properties": {
+                        "description": {
+                            "$ref": "#/definitions/StringNullVersioned"
+                        },
+                        "uri": {
+                            "$ref": "#/definitions/StringNullVersioned"
+                        },
+                        "gazetteer": {
+                            "type": "object",
+                            "properties": {
+                                "identifiers": {
+                                    "items": {
+                                        "properties": {
+                                            "releaseID": {
+                                                "type": "string"
+                                            },
+                                            "releaseDate": {
+                                                "format": "date-time",
+                                                "type": "string"
+                                            },
+                                            "releaseTag": {
+                                                "items": {
+                                                    "type": "string"
+                                                },
+                                                "type": "array"
+                                            },
+                                            "value": {
+                                                "type": [
+                                                    "array",
+                                                    "null"
+                                                ],
+                                                "items": [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "type": "array"
+                                },
+                                "scheme": {
+                                    "$ref": "#/definitions/StringNullVersioned"
+                                }
+                            }
+                        },
+                        "geometry": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "items": {
+                                        "properties": {
+                                            "releaseID": {
+                                                "type": "string"
+                                            },
+                                            "releaseDate": {
+                                                "format": "date-time",
+                                                "type": "string"
+                                            },
+                                            "releaseTag": {
+                                                "items": {
+                                                    "type": "string"
+                                                },
+                                                "type": "array"
+                                            },
+                                            "value": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "enum": [
+                                                    "Point",
+                                                    "MultiPoint",
+                                                    "LineString",
+                                                    "MultiLineString",
+                                                    "Polygon",
+                                                    "MultiPolygon"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "type": "array"
+                                },
+                                "coordinates": {
+                                    "items": {
+                                        "properties": {
+                                            "releaseID": {
+                                                "type": "string"
+                                            },
+                                            "releaseDate": {
+                                                "format": "date-time",
+                                                "type": "string"
+                                            },
+                                            "releaseTag": {
+                                                "items": {
+                                                    "type": "string"
+                                                },
+                                                "type": "array"
+                                            },
+                                            "value": {
+                                                "type": [
+                                                    "array",
+                                                    "null"
+                                                ],
+                                                "items": [
+                                                    {
+                                                        "type": [
+                                                            "number",
+                                                            "array"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "type": [
+                                                            "number",
+                                                            "array"
+                                                        ]
+                                                    }
+                                                ],
+                                                "minItems": 2
+                                            }
+                                        }
+                                    },
+                                    "type": "array"
+                                }
+                            },
+                            "notes_for_guidance": "The guidance notes should describe when to use MultiPoint, and when to use multiple line-items each with their own locations"
+                        }
+                    }
+                },
+                "additionalClassifications": {
+                    "items": {
+                        "properties": {
+                            "value": {},
+                            "releaseDate": {}
+                        }
+                    }
+                }
+            },
+            "deliveryAddress": {
+                "$ref": "#/definitions/Address"
+            }
+        },
+        "Milestone": {
+            "properties": {
+                "status": {
+                    "items": {
+                        "properties": {
+                            "releaseDate": {}
+                        }
+                    }
+                }
+            }
+        },
+        "Identifier": {
+            "properties": {
+                "id": {
+                    "items": {
+                        "properties": {
+                            "releaseDate": {}
+                        }
+                    }
+                }
+            }
+        },
+        "Award": {
+            "properties": {
+                "status": {
+                    "items": {
+                        "properties": {
+                            "releaseDate": {}
+                        }
+                    }
+                },
+                "suppliers": {
+                    "items": {
+                        "properties": {
+                            "value": {},
+                            "releaseDate": {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
