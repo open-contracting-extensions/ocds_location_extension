@@ -38,8 +38,7 @@
                             "title":"Coordinates",
                             "description": "The relevant array of points, e.g. [latitude,longitude], or nested array, for the geoJSON geometry being described. The longitude and latitude MUST be expressed in decimal degrees in the WGS84 (EPSG:4326) projection",
                             "type": ["array","null"],
-                            "items": [{ "type": ["number","array"] }, {"type": ["number","array"]}],
-                            "minItems": 2
+                            "items": {"type": ["number","array"]}
                         }
                     }
                 },
