@@ -85,3 +85,7 @@ If the procurement related to the rebuilding of a road, then the item could also
 ```
 
 You can take the contents of the geometry object, excluding the ```geometry``` keyword, and plug this into any GeoJSON tool to see the shape that is described. 
+
+## Issues
+
+Report issues for this extension in the [ocds-extensions repository](https://github.com/open-contracting/ocds-extensions/issues), putting the extension's name in the issue's title.
