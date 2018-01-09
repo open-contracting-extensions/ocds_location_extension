@@ -59,8 +59,7 @@
               "items": {
                 "type": [
                   "number",
-                  "array",
-                  "null"
+                  "array"
                 ]
               }
             }
