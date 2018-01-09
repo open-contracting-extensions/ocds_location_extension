@@ -9,6 +9,7 @@
     "en": "https://github.com/open-contracting/ocds_location_extension"
   },
   "codelists": [
-    "locationGazeteers.csv"
+    "locationGazeteers.csv",
+    "geometryType.csv"
   ]
 }
