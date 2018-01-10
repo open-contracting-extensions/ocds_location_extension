@@ -4,10 +4,12 @@
       "properties": {
         "deliveryLocation": {
           "title": "Delivery Location",
+          "description":"The location where activity related to this tender, contract or license will be delivered, or will take place.",
           "$ref": "#/definitions/Location"
         },
         "deliveryAddress": {
           "title": "Delivery Address",
+          "description":"The address to which, or where, goods or services related to this tender, contract or license will be delivered.",
           "$ref": "#/definitions/Address"
         }
       }
@@ -67,6 +69,8 @@
         },
         "gazetteer": {
           "type": "object",
+          "title":"Gazetteer",
+          "description":"A gazetteer is a geographical index or directory. The specific gazetteer used should be specified in scheme, and one or more codes from that gazetteer used in identifier.",
           "properties": {
             "scheme": {
               "title": "Gazetteer scheme",
