@@ -75,7 +75,7 @@
                 "string",
                 "null"
               ],
-              "codelist": "locationGazeteers.csv",
+              "codelist": "locationGazetteers.csv",
               "openCodelist": true
             },
             "identifiers": {
