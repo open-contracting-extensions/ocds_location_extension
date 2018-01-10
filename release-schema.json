@@ -87,8 +87,7 @@
               ],
               "items": {
                 "type": [
-                  "string",
-                  "null"
+                  "string"
                 ]
               }
             }
