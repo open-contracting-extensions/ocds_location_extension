@@ -16,7 +16,7 @@ This extension introduces two properties at the ```items``` level to describe lo
 
 ## Gazetteer Codelist
 
-See locationGazeteers.csv
+See locationGazetteers.csv
 
 ## Example
 
