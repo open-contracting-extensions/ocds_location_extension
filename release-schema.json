@@ -28,7 +28,10 @@
           ]
         },
         "geometry": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "title": "Geometry",
           "description": "We follow the [GeoJSON standard](http://geojson.org/) to express basic location information, using latitude and longitude values in the [WGS84](https://en.wikipedia.org/wiki/World_Geodetic_System) (EPSG:4326) projection.  A point location can be identified by geocoding a delivery address. For concession licenses, or other contracts covering a polygon location which is not contained in a known gazetteer, polygon and multi-polygon can be used. ",
           "properties": {
@@ -68,7 +71,10 @@
           }
         },
         "gazetteer": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "title": "Gazetteer",
           "description": "A gazetteer is a geographical index or directory. The specific gazetteer used should be specified in scheme, and one or more codes from that gazetteer used in identifier.",
           "properties": {
