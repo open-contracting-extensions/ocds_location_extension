@@ -1,4 +1,4 @@
-Category,Code,Title,Description,Source,URI_Pattern
+Category,Code,Title,Description,Source,URI Pattern
 Sub-National,NUTS,EU Nomenclature of Territorial Units for Statistics,The Nomenclature of Territorial Units for Statistics (NUTS) was established by Eurostat in order to provide a single uniform breakdown of territorial units for the production of regional statistics for the European Union.,http://simap.europa.eu/codes-and-nomenclatures/codes-nuts/index_en.htm,http://nuts.psi.enakting.org/id/
 National,ISO2,ISO Country Codes (3166-1 alpha-2),ISO 2-Digit Country Codes,http://www.iso.org/iso/country_codes.htm,
 Universal,GEONAMES,GeoNames,"GeoNames provides numerical identifiers for many points of interest around the world, including administrative divisions, populated centres and other locations, embedded within a structured tree of geographic relations.",http://www.geonames.org/,http://www.geonames.org/
