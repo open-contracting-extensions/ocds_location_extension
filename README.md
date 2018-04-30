@@ -1,6 +1,6 @@
 # Location Data
 
-Communicating the location of proposed or executed contract delivery is important to make users of contracting data.
+Communicating the location of proposed or executed contract delivery is important to many users of contracting data.
 
 This extension introduces two properties at the `items` level to describe location:
 
