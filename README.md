@@ -19,6 +19,8 @@ This extension introduces two properties at the `items` level to describe locati
 
 See locationGazetteers.csv
 
+The codelist's Category column indicates whether the gazetteer has identifiers for the whole world (Universal) or only some subset (Sub-National).
+
 ## Example
 
 Below is an example of a geolocated item:
