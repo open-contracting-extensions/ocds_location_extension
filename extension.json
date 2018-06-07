@@ -3,7 +3,7 @@
     "en": "Location"
   },
   "description": {
-    "en": "Allow the point of delivery or site of works for a given line item to be indicated in the tender, award and contract stages."
+    "en": "Allows the point of delivery or site of works for a given line item to be indicated in tender, award and contract objects."
   },
   "documentationUrl": {
     "en": "https://github.com/open-contracting/ocds_location_extension"
