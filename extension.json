@@ -14,5 +14,8 @@
   "codelists": [
     "locationGazetteers.csv",
     "geometryType.csv"
+  ],
+  "schemas": [
+    "release-schema.json"
   ]
 }
