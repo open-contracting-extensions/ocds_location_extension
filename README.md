@@ -7,14 +7,6 @@ This extension introduces two properties at the `items` level to describe locati
 * `deliveryAddress` - a standard `Address` block which can be used to provide a postal address where services should be delivered.
 * `deliveryLocation` - a new block consisting of GeoJSON and Gazetteer entries to describe a wider range of locations to which the contract line item relates.
 
-## Schema reference
-
-```eval_rst
-.. extensiontable::
-   :extension: location
-   :definitions: Location
-```
-
 ## Gazetteer Codelist
 
 See locationGazetteers.csv
