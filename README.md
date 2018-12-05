@@ -7,11 +7,7 @@ This extension introduces two properties at the `items` level to describe locati
 * `deliveryAddress` - a standard `Address` block which can be used to provide a postal address where services should be delivered.
 * `deliveryLocation` - a new block consisting of GeoJSON and Gazetteer entries to describe a wider range of locations to which the contract line item relates.
 
-## Gazetteer Codelist
-
-See locationGazetteers.csv
-
-The codelist's Category column indicates whether the gazetteer has identifiers for the whole world (Universal) or only some subset (Sub-National).
+The `locationGazetteers.csv` codelist's `Category` column indicates whether the gazetteer has identifiers for the whole world ('Universal') or only some subset ('Nationa' or 'Sub-National').
 
 ## Example
 
