@@ -84,6 +84,11 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ## Changelog
 
+### v1.1.4
+
+* Correct the order of longitude and latitude in field descriptions to match the GeoJSON specification
+* Describe elevation or altitude values
+
 ### v1.1.3
 
 * Disallow `Location.geometry.coordinates` from having null in its array of coordinates
