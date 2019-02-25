@@ -88,6 +88,8 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 * Correct the order of longitude and latitude in field descriptions to match the GeoJSON specification
 * Describe elevation or altitude values
+* Remove Sphinx directives from readme
+* Update extension.json for Extension Explorer
 
 ### v1.1.3
 
