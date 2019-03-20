@@ -86,6 +86,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ### v1.1.4
 
+* Disallow `Location.geometry` and `Location.gazetteer` from being null (bug introduced in v1.1.3)
 * Correct the order of longitude and latitude in field descriptions to match the GeoJSON specification
 * Describe elevation or altitude values
 * Remove Sphinx directives from readme
