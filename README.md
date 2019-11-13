@@ -11,54 +11,56 @@ The `locationGazetteers.csv` codelist's `Category` column indicates whether the 
 
 ## Example
 
-Below is an example of a geolocated item:
+Below is an example of a geolocated item in the `tender` section:
 
 ```json
 {
-  "items": [
-    {
-      "id": "item1",
-      "description": "Ceremonial Trumpets for Oxford Town Hall",
-      "classification": {
-        "description": "Trumpets",
-        "scheme": "CPV",
-        "id": "37312100",
-        "uri": "http://purl.org/cpv/2008/code-37312100"
-      },
-      "deliveryLocation": {
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            51.751944,
-            -1.257778
-          ]
+  "tender": {
+    "items": [
+      {
+        "id": "item1",
+        "description": "Ceremonial Trumpets for Oxford Town Hall",
+        "classification": {
+          "description": "Trumpets",
+          "scheme": "CPV",
+          "id": "37312100",
+          "uri": "http://purl.org/cpv/2008/code-37312100"
         },
-        "gazetteer": {
-          "scheme": "GEONAMES",
-          "identifiers": [
-            "2640729"
-          ]
+        "deliveryLocation": {
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              51.751944,
+              -1.257778
+            ]
+          },
+          "gazetteer": {
+            "scheme": "GEONAMES",
+            "identifiers": [
+              "2640729"
+            ]
+          },
+          "description": "Central Oxford",
+          "uri": "http://www.geonames.org/2640729/oxford.html"
         },
-        "description": "Central Oxford",
-        "uri": "http://www.geonames.org/2640729/oxford.html"
-      },
-      "deliveryAddress": {
-        "postalCode": "OX1 1BX",
-        "countryName": "United Kingdom",
-        "streetAddress": "Town Hall, St Aldate's",
-        "region": "Oxfordshire",
-        "locality": "Oxford"
-      },
-      "unit": {
-        "name": "Items",
-        "value": {
-          "currency": "GBP",
-          "amount": 10000
-        }
-      },
-      "quantity": 10
-    }
-  ]
+        "deliveryAddress": {
+          "postalCode": "OX1 1BX",
+          "countryName": "United Kingdom",
+          "streetAddress": "Town Hall, St Aldate's",
+          "region": "Oxfordshire",
+          "locality": "Oxford"
+        },
+        "unit": {
+          "name": "Items",
+          "value": {
+            "currency": "GBP",
+            "amount": 10000
+          }
+        },
+        "quantity": 10
+      }
+    ]
+  }
 }
 ```
 
@@ -66,36 +68,43 @@ If the procurement related to the rebuilding of a road, then the item could also
 
 ```json
 {
-  "deliveryLocation": {
-    "geometry": {
-      "type": "LineString",
-      "coordinates": [
-        [
-          102,
-          0
-        ],
-        [
-          103,
-          1
-        ],
-        [
-          104,
-          0
-        ],
-        [
-          105,
-          1
-        ]
-      ]
-    },
-    "gazetteer": {
-      "scheme": "OSMW",
-      "identifiers": [
-        "27895985"
-      ]
-    },
-    "description": "St Aldate's",
-    "uri": "http://www.geonames.org/2640729/oxford.html"
+  "tender": {
+    "items": [
+      {
+        "id": "item1",
+        "deliveryLocation": {
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                102,
+                0
+              ],
+              [
+                103,
+                1
+              ],
+              [
+                104,
+                0
+              ],
+              [
+                105,
+                1
+              ]
+            ]
+          },
+          "gazetteer": {
+            "scheme": "OSMW",
+            "identifiers": [
+              "27895985"
+            ]
+          },
+          "description": "St Aldate's",
+          "uri": "http://www.geonames.org/2640729/oxford.html"
+        }
+      }
+    ]
   }
 }
 ```
