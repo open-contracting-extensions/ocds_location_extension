@@ -17,5 +17,9 @@
   ],
   "schemas": [
     "release-schema.json"
-  ]
+  ],
+  "contactPoint": {
+    "name": "Open Contracting Partnership",
+    "email": "data@open-contracting.org"
+  }
 }
