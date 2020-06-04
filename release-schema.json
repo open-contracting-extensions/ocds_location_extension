@@ -74,7 +74,7 @@
           "properties": {
             "scheme": {
               "title": "Gazetteer scheme",
-              "description": "The entry of the selected gazetteer in the gazetteers codelist. The codelist provides details of services, where available, that can resolve a gazetteer entry to provide location names.",
+              "description": "The identifier of the gazetteer. The `locationGazetteers.csv` codelist provides details of services, where available, that can resolve a gazetteer entry to provide location names.",
               "type": [
                 "string",
                 "null"
