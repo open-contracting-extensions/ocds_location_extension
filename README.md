@@ -117,6 +117,10 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ## Changelog
 
+### Unreleased
+
+* Remove type information from field descriptions
+
 ### v1.1.4
 
 * Disallow `Location.geometry` and `Location.gazetteer` from being null (bug introduced in v1.1.3)
