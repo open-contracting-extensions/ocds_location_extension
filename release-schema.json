@@ -21,7 +21,7 @@
       "properties": {
         "description": {
           "title": "Description",
-          "description": "A name or description of this location. This might include the name(s) of the location(s), or might provide a human readable description of the location to be covered. This description may be used in a user-interface.",
+          "description": "A name or description of this location. This might include the name(s) of the location(s), or might provide a human-readable description of the location to be covered.",
           "type": [
             "string",
             "null"
@@ -30,11 +30,11 @@
         "geometry": {
           "type": "object",
           "title": "Geometry",
-          "description": "We follow the [GeoJSON standard](http://geojson.org/) to express basic location information, using longitude, latitude, and (optionally) elevation values in the [WGS84](https://en.wikipedia.org/wiki/World_Geodetic_System) (EPSG:4326) projection. A point location can be identified by geocoding a delivery address. For concession licenses, or other contracts covering a polygon location which is not contained in a known gazetteer, polygon and multi-polygon can be used.",
+          "description": "We follow the [GeoJSON standard](http://geojson.org/) to express basic location information, using longitude, latitude, and optional elevation values in the [WGS84](https://en.wikipedia.org/wiki/World_Geodetic_System) (EPSG:4326) projection. A point location can be identified by geocoding a delivery address. For concession licenses, or other contracts covering a polygon location which is not contained in a known gazetteer, polygon and multi-polygon can be used.",
           "properties": {
             "type": {
               "title": "Type",
-              "description": "The type of [GeoJSON Geometry Objects](http://geojson.org/geojson-spec.html#geometry-objects) being provided. To provide longitude, latitude, and (optionally) elevation, use 'Point', and enter an array of [longitude, latitude] or [longitude, latitude, elevation] as the value of the coordinates field: e.g. [-122.085, 37.42]. Note the capitalization of type values, in order to maintain compatibility with GeoJSON.",
+              "description": "The type of [GeoJSON Geometry Objects](http://geojson.org/geojson-spec.html#geometry-objects) being provided. To provide longitude, latitude, and optional elevation, use 'Point', and enter an array of [longitude, latitude] or [longitude, latitude, elevation] as the value of the coordinates field: e.g. [-122.085, 37.42].",
               "type": [
                 "string",
                 "null"
@@ -53,7 +53,7 @@
             },
             "coordinates": {
               "title": "Coordinates",
-              "description": "The relevant array of points, e.g. [longitude, latitude] or [longitude, latitude, elevation], or a nested array of points, for the GeoJSON geometry being described. The longitude and latitude MUST be expressed in decimal degrees in the WGS84 (EPSG:4326) projection.",
+              "description": "The relevant array of points, e.g. [longitude, latitude] or [longitude, latitude, elevation], or a nested array of points, for the GeoJSON geometry being described. The longitude and latitude must be expressed in decimal degrees in the WGS84 (EPSG:4326) projection.",
               "type": [
                 "array",
                 "null"
@@ -70,7 +70,7 @@
         "gazetteer": {
           "type": "object",
           "title": "Gazetteer",
-          "description": "A gazetteer is a geographical index or directory. The specific gazetteer used should be specified in scheme, and one or more codes from that gazetteer used in identifier.",
+          "description": "Identifiers from a gazetteer (a geographical index or directory) for the location.",
           "properties": {
             "scheme": {
               "title": "Gazetteer scheme",
@@ -84,7 +84,7 @@
             },
             "identifiers": {
               "title": "Identifiers",
-              "description": "An array of one or more codes drawn from the gazetteer indicated in scheme.",
+              "description": "An array of one or more codes drawn from the gazetteer indicated by the `scheme` field.",
               "type": [
                 "array",
                 "null"
@@ -103,7 +103,7 @@
             "null"
           ],
           "title": "URI",
-          "description": "A URI to a further description of the activity location. This may be a human readable document with information on the location, or a machine-readable description of the location."
+          "description": "A URI to a further description of the activity location. This might be a human-readable document with information on the location, or a machine-readable description of the location."
         }
       }
     }
