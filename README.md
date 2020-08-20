@@ -117,7 +117,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ## Changelog
 
-### Unreleased
+### v1.1.5
 
 * Remove type information from field descriptions
 * Review normative and non-normative words
