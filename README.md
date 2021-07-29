@@ -1,11 +1,6 @@
 # Location Data
 
-Communicating the location of proposed or executed contract delivery is important to many users of contracting data.
-
-This extension introduces two fields at the `items` level to describe location:
-
-* `deliveryAddress` - a standard `Address` block which can be used to provide a postal address where services should be delivered.
-* `deliveryLocation` - a new block consisting of GeoJSON and Gazetteer entries to describe a wider range of locations to which the contract line item relates.
+This extension adds address and location fields to item objects, to communicate the location of proposed or executed contract delivery.
 
 The `locationGazetteers.csv` codelist's `Category` column indicates whether the gazetteer has identifiers for the whole world ('Universal') or only some subset ('National' or 'Sub-National').
 
