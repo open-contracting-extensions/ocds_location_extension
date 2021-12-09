@@ -24,15 +24,41 @@
     },
     "Item": {
       "properties": {
+        "deliveryLocations": {
+          "title": "Delivery Locations",
+          "description": "The locations where activity related to this tender, contract or license will be delivered",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Location"
+          },
+          "uniqueItems": true
+        },
         "deliveryLocation": {
           "title": "Delivery Location",
           "description": "The location where activity related to this tender, contract or license will be delivered, or will take place.",
-          "$ref": "#/definitions/Location"
+          "$ref": "#/definitions/Location",
+          "deprecated": {
+            "description": "This field is deprecated in favour of `.deliveryLocations` to support items with multiple delivery locations.",
+            "deprecatedVersion": "1.1.6"
+          }
+        },
+        "deliveryAddressses": {
+          "title": "Delivery Addresses",
+          "description": "The addresses to which, or where, goods or services related to this tender, contract or license will be delivered.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Address"
+          },
+          "uniqueItems": true
         },
         "deliveryAddress": {
           "title": "Delivery Address",
           "description": "The address to which, or where, goods or services related to this tender, contract or license will be delivered.",
-          "$ref": "#/definitions/Address"
+          "$ref": "#/definitions/Address",
+          "deprecated": {
+            "description": "This field is deprecated in favour of `.deliveryAddresses` to support items with multiple delivery locations.",
+            "deprecatedVersion": "1.1.6"
+          }
         }
       }
     },
