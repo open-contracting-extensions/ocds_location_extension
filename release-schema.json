@@ -1,5 +1,27 @@
 {
   "definitions": {
+    "Tender": {
+      "properties": {
+        "deliveryLocations": {
+          "title": "Delivery Locations",
+          "description": "The locations where activity related to this tender will take place.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Location"
+          },
+          "uniqueItems": true
+        },
+        "deliveryAddressses": {
+          "title": "Delivery Addresses",
+          "description": "The addresses to which, or where, goods or services related to this tender will be delivered.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Address"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
     "Item": {
       "properties": {
         "deliveryLocation": {
