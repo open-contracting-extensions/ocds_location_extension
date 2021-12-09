@@ -11,7 +11,7 @@
           },
           "uniqueItems": true
         },
-        "deliveryAddressses": {
+        "deliveryAddresses": {
           "title": "Delivery Addresses",
           "description": "The addresses to which, or where, goods or services related to this tender will be delivered.",
           "type": "array",
@@ -42,7 +42,7 @@
             "deprecatedVersion": "1.1.6"
           }
         },
-        "deliveryAddressses": {
+        "deliveryAddresses": {
           "title": "Delivery Addresses",
           "description": "The addresses to which, or where, goods or services related to this tender, contract or license will be delivered.",
           "type": "array",
