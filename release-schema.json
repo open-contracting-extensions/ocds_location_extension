@@ -9,7 +9,8 @@
           "items": {
             "$ref": "#/definitions/Location"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "wholeListMerge": true
         },
         "deliveryAddresses": {
           "title": "Delivery Addresses",
@@ -18,7 +19,8 @@
           "items": {
             "$ref": "#/definitions/Address"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "wholeListMerge": true
         }
       }
     },
@@ -31,7 +33,8 @@
           "items": {
             "$ref": "#/definitions/Location"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "wholeListMerge": true
         },
         "deliveryLocation": {
           "title": "Delivery Location",
@@ -49,7 +52,8 @@
           "items": {
             "$ref": "#/definitions/Address"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "wholeListMerge": true
         },
         "deliveryAddress": {
           "title": "Delivery Address",
