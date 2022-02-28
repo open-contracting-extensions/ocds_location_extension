@@ -102,6 +102,7 @@
             "string",
             "null"
           ],
+          "format": "uri",
           "title": "URI",
           "description": "A URI to a further description of the activity location. This might be a human-readable document with information on the location, or a machine-readable description of the location."
         }
