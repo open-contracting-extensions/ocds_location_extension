@@ -1,6 +1,6 @@
 # Location Data
 
-This extension adds address and location fields to item objects, to communicate the location of proposed or executed contract delivery.
+This extension adds address and location fields to tenders and items, to communicate the location of proposed or executed contract delivery.
 
 The `locationGazetteers.csv` codelist's `Category` column indicates whether the gazetteer has identifiers for the whole world ('Universal') or only some subset ('National' or 'Sub-National').
 
@@ -111,6 +111,12 @@ You can take the contents of the geometry object, excluding the `geometry` keywo
 Report issues for this extension in the [ocds-extensions repository](https://github.com/open-contracting/ocds-extensions/issues), putting the extension's name in the issue's title.
 
 ## Changelog
+
+### v1.1.7
+
+* Add `Tender.deliveryAddresses` and `Tender.deliveryLocations`
+* Deprecate the `Item.deliveryAddress` field in favor of the new `Item.deliveryAddresses` field, to support items with multiple delivery addresses.
+* Deprecate the `Item.deliveryLocation` field in favor of the new `Item.deliveryLocations` field, to support items with multiple delivery locations.
 
 ### v1.1.6
 
