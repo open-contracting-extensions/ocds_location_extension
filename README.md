@@ -112,11 +112,15 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ## Changelog
 
-### v1.1.6
+### v1.1.7
 
 * Add `Tender.deliveryAddresses` and `Tender.deliveryLocations`
 * Deprecate the `Item.deliveryAddress` field in favor of the new `Item.deliveryAddresses` field, to support items with multiple delivery addresses.
 * Deprecate the `Item.deliveryLocation` field in favor of the new `Item.deliveryLocations` field, to support items with multiple delivery locations.
+
+### v1.1.6
+
+* Add "format": "uri" to `Location.uri`
 
 ### v1.1.5
 
