@@ -112,6 +112,10 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ## Changelog
 
+### Unreleased
+
+* Update GeoJSON reference links in `Location.geometry`
+
 ### v1.1.7
 
 * Add `Tender.deliveryAddresses` and `Tender.deliveryLocations`
