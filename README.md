@@ -72,7 +72,7 @@ If the procurement related to the rebuilding of a road, then the item could also
       {
         "id": "item1",
         "deliveryLocations": [
-            {
+          {
             "geometry": {
               "type": "LineString",
               "coordinates": [
@@ -124,7 +124,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 * Deprecate the `Item.deliveryAddress` field in favor of the new `Item.deliveryAddresses` field, to support items with multiple delivery addresses
 * Deprecate the `Item.deliveryLocation` field in favor of the new `Item.deliveryLocations` field, to support items with multiple delivery locations
 * Add "format": "uri" to `Location.uri`
-* Update GeoJSON reference links in `Location.geometry`
+* Update field descriptions to allow location objects to be used in other contexts than deliveries
 
 ### v1.1.5
 
