@@ -72,7 +72,7 @@ If the procurement related to the rebuilding of a road, then the item could also
       {
         "id": "item1",
         "deliveryLocations": [
-            {
+          {
             "geometry": {
               "type": "LineString",
               "coordinates": [
