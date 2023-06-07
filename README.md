@@ -21,30 +21,34 @@ Below is an example of a geolocated item in the `tender` section:
           "id": "37312100",
           "uri": "http://purl.org/cpv/2008/code-37312100"
         },
-        "deliveryLocation": {
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              51.751944,
-              -1.257778
-            ]
-          },
-          "gazetteer": {
-            "scheme": "GEONAMES",
-            "identifiers": [
-              "2640729"
-            ]
-          },
-          "description": "Central Oxford",
-          "uri": "http://www.geonames.org/2640729/oxford.html"
-        },
-        "deliveryAddress": {
-          "postalCode": "OX1 1BX",
-          "countryName": "United Kingdom",
-          "streetAddress": "Town Hall, St Aldate's",
-          "region": "Oxfordshire",
-          "locality": "Oxford"
-        },
+        "deliveryLocations": [
+          {
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                51.751944,
+                -1.257778
+              ]
+            },
+            "gazetteer": {
+              "scheme": "GEONAMES",
+              "identifiers": [
+                "2640729"
+              ]
+            },
+            "description": "Central Oxford",
+            "uri": "http://www.geonames.org/2640729/oxford.html"
+          }
+        ],
+        "deliveryAddresses": [
+          {
+            "postalCode": "OX1 1BX",
+            "countryName": "United Kingdom",
+            "streetAddress": "Town Hall, St Aldate's",
+            "region": "Oxfordshire",
+            "locality": "Oxford"
+          }
+        ],
         "unit": {
           "name": "Items",
           "value": {
@@ -67,37 +71,39 @@ If the procurement related to the rebuilding of a road, then the item could also
     "items": [
       {
         "id": "item1",
-        "deliveryLocation": {
-          "geometry": {
-            "type": "LineString",
-            "coordinates": [
-              [
-                102,
-                0
-              ],
-              [
-                103,
-                1
-              ],
-              [
-                104,
-                0
-              ],
-              [
-                105,
-                1
+        "deliveryLocations": [
+            {
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  102,
+                  0
+                ],
+                [
+                  103,
+                  1
+                ],
+                [
+                  104,
+                  0
+                ],
+                [
+                  105,
+                  1
+                ]
               ]
-            ]
-          },
-          "gazetteer": {
-            "scheme": "OSMW",
-            "identifiers": [
-              "27895985"
-            ]
-          },
-          "description": "St Aldate's",
-          "uri": "http://www.geonames.org/2640729/oxford.html"
-        }
+            },
+            "gazetteer": {
+              "scheme": "OSMW",
+              "identifiers": [
+                "27895985"
+              ]
+            },
+            "description": "St Aldate's",
+            "uri": "http://www.geonames.org/2640729/oxford.html"
+          }
+        ]
       }
     ]
   }
@@ -114,17 +120,11 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ### Unreleased
 
-* Update GeoJSON reference links in `Location.geometry`
-
-### v1.1.7
-
 * Add `Tender.deliveryAddresses` and `Tender.deliveryLocations`
-* Deprecate the `Item.deliveryAddress` field in favor of the new `Item.deliveryAddresses` field, to support items with multiple delivery addresses.
-* Deprecate the `Item.deliveryLocation` field in favor of the new `Item.deliveryLocations` field, to support items with multiple delivery locations.
-
-### v1.1.6
-
+* Deprecate the `Item.deliveryAddress` field in favor of the new `Item.deliveryAddresses` field, to support items with multiple delivery addresses
+* Deprecate the `Item.deliveryLocation` field in favor of the new `Item.deliveryLocations` field, to support items with multiple delivery locations
 * Add "format": "uri" to `Location.uri`
+* Update GeoJSON reference links in `Location.geometry`
 
 ### v1.1.5
 
