@@ -68,8 +68,8 @@
     },
     "Location": {
       "type": "object",
-      "title": "Delivery Location",
-      "description": "The location where activity related to this tender, contract or license will be delivered, or will take place. A location can be described by either a geometry (point location, line or polygon), or a gazetteer entry, or both.",
+      "title": "Location",
+      "description": "A physical or virtual location.",
       "properties": {
         "description": {
           "title": "Description",
@@ -82,7 +82,7 @@
         "geometry": {
           "type": "object",
           "title": "Geometry",
-          "description": "We follow the [GeoJSON standard](https://www.rfc-editor.org/rfc/rfc7946) to express basic location information, using longitude, latitude, and optional elevation values in the [WGS84](https://en.wikipedia.org/wiki/World_Geodetic_System) (EPSG:4326) projection. A point location can be identified by geocoding a delivery address. For concession licenses, or other contracts covering a polygon location which is not contained in a known gazetteer, polygon and multi-polygon can be used.",
+          "description": "We follow the [GeoJSON standard](https://www.rfc-editor.org/rfc/rfc7946) to express basic location information, using longitude, latitude, and optional elevation values in the [WGS84](https://en.wikipedia.org/wiki/World_Geodetic_System) (EPSG:4326) projection. A point location can be identified by geocoding an address. For concession licenses, or other scenarios covering a polygon location that is not contained in a known gazetteer, polygon and multi-polygon can be used.",
           "properties": {
             "type": {
               "title": "Type",
@@ -154,7 +154,7 @@
           ],
           "format": "uri",
           "title": "URI",
-          "description": "A URI to a further description of the activity location. This might be a human-readable document with information on the location, or a machine-readable description of the location."
+          "description": "A URI to a further description of the location. This might be a human-readable document with information on the location, or a machine-readable description of the location."
         }
       }
     }
