@@ -9,8 +9,8 @@
           "items": {
             "$ref": "#/definitions/Location"
           },
-          "uniqueItems": true,
-          "wholeListMerge": true
+          "wholeListMerge": true,
+          "uniqueItems": true
         },
         "deliveryAddresses": {
           "title": "Delivery Addresses",
@@ -19,8 +19,8 @@
           "items": {
             "$ref": "#/definitions/Address"
           },
-          "uniqueItems": true,
-          "wholeListMerge": true
+          "wholeListMerge": true,
+          "uniqueItems": true
         }
       }
     },
@@ -28,13 +28,14 @@
       "properties": {
         "deliveryLocations": {
           "title": "Delivery Locations",
-          "description": "The locations where activity related to this tender, contract or license will be delivered",
+          "description": "The locations where activity related to this tender, contract or license will be delivered.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/Location"
           },
+          "wholeListMerge": true,
           "uniqueItems": true,
-          "wholeListMerge": true
+          "minItems": 1
         },
         "deliveryLocation": {
           "title": "Delivery Location",
@@ -52,8 +53,9 @@
           "items": {
             "$ref": "#/definitions/Address"
           },
+          "wholeListMerge": true,
           "uniqueItems": true,
-          "wholeListMerge": true
+          "minItems": 1
         },
         "deliveryAddress": {
           "title": "Delivery Address",
@@ -67,9 +69,9 @@
       }
     },
     "Location": {
-      "type": "object",
       "title": "Location",
       "description": "A physical or virtual location.",
+      "type": "object",
       "properties": {
         "description": {
           "title": "Description",
@@ -80,9 +82,9 @@
           ]
         },
         "geometry": {
-          "type": "object",
           "title": "Geometry",
           "description": "We follow the [GeoJSON standard](https://www.rfc-editor.org/rfc/rfc7946) to express basic location information, using longitude, latitude, and optional elevation values in the [WGS84](https://en.wikipedia.org/wiki/World_Geodetic_System) (EPSG:4326) projection. A point location can be identified by geocoding an address. For concession licenses, or other scenarios covering a polygon location that is not contained in a known gazetteer, polygon and multi-polygon can be used.",
+          "type": "object",
           "properties": {
             "type": {
               "title": "Type",
@@ -120,9 +122,9 @@
           }
         },
         "gazetteer": {
-          "type": "object",
           "title": "Gazetteer",
           "description": "Identifiers from a gazetteer (a geographical index or directory) for the location.",
+          "type": "object",
           "properties": {
             "scheme": {
               "title": "Gazetteer scheme",
@@ -148,13 +150,13 @@
           }
         },
         "uri": {
+          "title": "URI",
+          "description": "A URI to a further description of the location. This might be a human-readable document with information on the location, or a machine-readable description of the location.",
           "type": [
             "string",
             "null"
           ],
-          "format": "uri",
-          "title": "URI",
-          "description": "A URI to a further description of the location. This might be a human-readable document with information on the location, or a machine-readable description of the location."
+          "format": "uri"
         }
       }
     }
