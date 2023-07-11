@@ -93,6 +93,8 @@
                 "string",
                 "null"
               ],
+              "codelist": "geometryType.csv",
+              "openCodelist": false,
               "enum": [
                 "Point",
                 "MultiPoint",
@@ -101,9 +103,7 @@
                 "Polygon",
                 "MultiPolygon",
                 null
-              ],
-              "codelist": "geometryType.csv",
-              "openCodelist": false
+              ]
             },
             "coordinates": {
               "title": "Coordinates",
