@@ -159,6 +159,18 @@
           "format": "uri"
         }
       }
+    },
+    "Address": {
+      "properties": {
+        "description": {
+          "title": "Description",
+          "description": "A name or description of this address. This might include the name(s) of the address(s), or might provide a human-readable description of the address to be covered.",
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
     }
   }
 }
