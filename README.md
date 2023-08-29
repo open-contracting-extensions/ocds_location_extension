@@ -46,7 +46,8 @@ Below is an example of a geolocated item in the `tender` section:
             "countryName": "United Kingdom",
             "streetAddress": "Town Hall, St Aldate's",
             "region": "Oxfordshire",
-            "locality": "Oxford"
+            "locality": "Oxford",
+            "description": "The old town hall"
           }
         ],
         "unit": {
@@ -125,6 +126,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 * Deprecate the `Item.deliveryLocation` field in favor of the new `Item.deliveryLocations` field, to support items with multiple delivery locations
 * Add "format": "uri" to `Location.uri`
 * Update field descriptions to allow location objects to be used in other contexts than deliveries
+* Add `Address.description`
 
 ### v1.1.5
 
