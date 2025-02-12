@@ -151,6 +151,6 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 * Allow `Location.geometry` and `Location.gazetteer` to be null
 * Add title and description to `Location.gazetteer`
 * Add description to `Item.deliveryLocation`, `Item.deliveryAddress`
-* Add geometryType.csv codelist for `Location.geometry.type`
+* Add a `geometryType.csv` codelist for `Location.geometry.type`
 * List codelists in extension.json
 * Add tests and tidy code
